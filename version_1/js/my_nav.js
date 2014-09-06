@@ -4,11 +4,14 @@ jQuery(document).ready(function($) {
 
 	$('#nav-menu').on('click', function (event) {
 		if($(navId).hasClass(navOpenClass)) {
+			// alert('open nav');
+			// $(navId).removeClass(navOpenClass);
 
 			$(navId).animate({
 				height: 0
 			  },
 				300, function() {
+				/* stuff to do after animation is complete */
 				setTimeout(function () {
 					$(navId).removeClass(navOpenClass).removeAttr('style');
 				}, 320);

@@ -1,5 +1,5 @@
 $main-background-color: gray;
-$main-font-color: rgba(155, 205, 250, .9);
+$main-font-color: white;
 $rgba-percent: 0.9;
 $main-nav-color: rgba(55, 55, 55, $rgba-percent);
 $main-font: 'Ubuntu', sans-serif;
@@ -8,41 +8,13 @@ $main-font: 'Ubuntu', sans-serif;
 
 }
 
-// * {
-// 	margin: 0;
-// 	padding: 0;
-// }
-
 body {
 	background-color: $main-background-color;
 	font-family: $main-font ;
 }
 
-.main-footer {
-	color: $main-font-color;
-	// padding: .5rem;
-	.footer-widget {
-		// padding: .5rem;
-		// margin-left: 1em;
-		
-		h3 {
-			padding: 2rem;
-		}
-		p {
-			padding: 2rem;
-		}
-	}
-}
-
-
 .jumbotron {
 	text-shadow: 4px 4px 6px #666;
-	h1 {
-		color: white;
-	}
-	p {
-		color: white;
-	}
 	
 }
 
@@ -82,10 +54,7 @@ body {
 }
 
 .grid-item {
-	// width: 300px;
 	width: 25%;
-	// opacity: 0; 
-	// transform: 'scale(0.001)';
 }
 
 .grid-sizer {
@@ -114,114 +83,114 @@ body {
 	
 }
 
-.main-nav {
+
+.main-navigation {
+	
 	width: 100%;
 	height: auto;
-	// height: 4em;
-	// background-color: rgba(58, 74, 93, 0.9);
 	background-color: $main-background-color - 60;
 
 	.main-nav-holder {
 
-		padding-top: .5em;
-		overflow: hidden;
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+			padding-top: .5em;
+			// overflow: hidden;
+			height: 4em;
 
 		.main-nav-logo {
-			float: left;
-			display: block;
-			text-decoration: none;
-			font-size: 1.5em;
-			
-		}
+				float: left;
+				padding-top: .3em;
+				display: block;
+				text-decoration: none;
+				font-size: 1.5em;
+				
+			}
 
 		.nav-menu {
 			display: none;
 			float: right;
 			text-decoration: none;
 			font-size: 1.5em;
-		}
+		}	
 
+		ul {
+		list-style: none;
+		float: right;
+		margin-top: 0.7em;
 
+				li.current_page_item a {
+					
+					background: #071;
+				}
 
-		.nav-list {
-			padding: 0;
-			float: right;
-			overflow: hidden;
-				
-			li {
-				// display: inline-block;
-				float: left;
-				list-style: none;
-				padding: 0em;
+				li {
+					float: left;
+					padding-right: 1px;
+					position: relative;
 
-				a {
-					display: block;
-					text-decoration: none;
-					font-size: 1.5em;
-					color: $main-nav-color + 80;
-					padding: 0 .5em;
+					& > ul {
 
+					display: none;
+					position: absolute;
+					margin-top: 0em;
+					left: 0;
+					top: 100%;		
+					}
 
-					&:hover, &:active {
-						// text-decoration: none;
-						color: $main-nav-color + 150;
-						// font-size: 1.7em;
+					&:hover > ul {
+						display: block;
+					}
+
+					& > ul li {
+						padding: 0;
+						padding-top: 1px;
+					}
+
+					& > ul li > ul {
+						left: 100%;
+						top: 0;
+						padding-left: 1px;
+
+					}
+
+					& > ul li > ul li {
+						width: 100px;
+					}
+
+					&:hover > a {
+						background: #091;
 					}
 				}
 
+				a {
+					display: table-cell;
+					vertical-align: middle;
+					width: 10em;
+					height: 3em;
+					text-align: center;
+					background: $main-background-color - 90;
+					color: #FFF;
+					text-decoration: none;
+				}
+
+				a:hover {
+					background: #09C;
+
+				}
 			}
-		}
 
-		
-
-	}
+			
+	
+	} 
+	// Main Nav holder
+	
 
 }
-
-/**** Transitions ****/
-
-// .masonry,
-// .masonry .masonry-brick {
-//   -webkit-transition-duration: $masonry-duration;
-//      -moz-transition-duration: $masonry-duration;
-//       -ms-transition-duration: $masonry-duration;
-//        -o-transition-duration: $masonry-duration;
-//           transition-duration: $masonry-duration;
-// }
-
-// .masonry {
-//   -webkit-transition-property: height, width;
-//      -moz-transition-property: height, width;
-//       -ms-transition-property: height, width;
-//        -o-transition-property: height, width;
-//           transition-property: height, width;
-// }
-
-// .masonry .masonry-brick {
-//   -webkit-transition-property: left, right, top;
-//      -moz-transition-property: left, right, top;
-//       -ms-transition-property: left, right, top;
-//        -o-transition-property: left, right, top;
-//           transition-property: left, right, top;
-// }
-
-// .hide {
-// 	opacity: 0; 
-// 	transform: 'scale(0.001)';
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Main Navigation
 
 
 
