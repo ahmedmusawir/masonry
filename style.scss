@@ -1,5 +1,5 @@
 $main-background-color: gray;
-$main-font-color: white;
+$main-font-color: rgba(155, 205, 250, .9);
 $rgba-percent: 0.9;
 $main-nav-color: rgba(55, 55, 55, $rgba-percent);
 $main-font: 'Ubuntu', sans-serif;
@@ -13,8 +13,32 @@ body {
 	font-family: $main-font ;
 }
 
+.main-footer {
+	color: $main-font-color;
+	// padding: .5rem;
+	.footer-widget {
+		// padding: .5rem;
+		// margin-left: 1em;
+		
+		h3 {
+			padding: 2rem;
+		}
+		p {
+			padding: 2rem;
+		}
+	}
+}
+
+
 .jumbotron {
 	text-shadow: 4px 4px 6px #666;
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+
 	
 }
 
