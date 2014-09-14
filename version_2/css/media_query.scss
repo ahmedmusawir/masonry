@@ -200,7 +200,7 @@ $main-nav-color: rgba(55, 55, 55, $rgba-percent);
 		// margin-right: 1.5em;
 	}
 
-	// Main Navigation Start for 767 Media Query
+	// Main Navigation Start for 992 Media Query
 	.main-navigation {
 	
 		display: block;
@@ -240,7 +240,7 @@ $main-nav-color: rgba(55, 55, 55, $rgba-percent);
 				padding-top: .2em;
 			}	
 
-			.nav-list { //top ul tag 
+			.nav-list {
 				
 				clear: both;
 				display: block;	
@@ -262,28 +262,13 @@ $main-nav-color: rgba(55, 55, 55, $rgba-percent);
 					}
 
 
-					.sub-menu { //All children ul tags
+					ul {
 						position: relative;
 						display: block;
 						top: inherit;
 						left: 0;
-						height: 0;
-
-						.sub-menu {
-							// height: 0;
-
-							.sub-menu {
-								// height: 0;
-							}
-						}
 
 					}
-
-					.sub-menu-open {
-						height: auto;
-					}
-
-
 
 				}
 

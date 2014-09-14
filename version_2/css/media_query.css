@@ -160,14 +160,11 @@
           .main-navigation .main-nav-holder .nav-list li a {
             display: block;
             width: 100%; }
-          .main-navigation .main-nav-holder .nav-list li .sub-menu {
+          .main-navigation .main-nav-holder .nav-list li ul {
             position: relative;
             display: block;
             top: inherit;
-            left: 0;
-            height: 0; }
-          .main-navigation .main-nav-holder .nav-list li .sub-menu-open {
-            height: auto; }
+            left: 0; }
       .main-navigation .main-nav-holder .nav-open {
         height: auto; } }
 @media screen and (max-width: 600px) {
